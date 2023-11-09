@@ -27,16 +27,16 @@
 
 Code for entering data into the combobox , methods of the class for the thesis
 
-<code> public void connectionComboBox(ComboBox comboBox, string s)
-        {
-            openConnection();
-            SqlDataAdapter dataAdapter2 = new SqlDataAdapter(s, sqlConnection);
-            System.Data.DataTable dt = new System.Data.DataTable();
-            dataAdapter2.Fill(dt);
-            comboBox.DataSource = dt;
-            comboBox.DisplayMember = "SS";
-            comboBox.ValueMember = "id";
-            closeConnection();
+<code> public void connectionComboBox(ComboBox comboBox, string s)<br>
+        {<br>
+            openConnection();<br>
+            SqlDataAdapter dataAdapter2 = new SqlDataAdapter(s, sqlConnection);<br>
+            System.Data.DataTable dt = new System.Data.DataTable();<br>
+            dataAdapter2.Fill(dt);<br>
+            comboBox.DataSource = dt;<br>
+            comboBox.DisplayMember = "SS";<br>
+            comboBox.ValueMember = "id";<br>
+            closeConnection();<br>
         }
 </code>
 
